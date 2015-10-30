@@ -23,14 +23,14 @@ Install new crontab like this.
 ```
 **In .sh file you can setup your informations.**
 
-Email
-# requires enabling outgoing sendmail from localhost to a valid 
-# smtp server, which is usually disabled by default
+Email 
+requires enabling outgoing sendmail from localhost to a valid 
+smtp server, which is usually disabled by default
 ```
 ADMIN="first@email.com,second@email.com"
 ```
 Threshold
-# that will send an email, when disk use in partition is bigger than threshold percent.
+that will send an email, when disk use in partition is bigger than threshold percent.
 ```
 THRESHOLD=90 
 ```
