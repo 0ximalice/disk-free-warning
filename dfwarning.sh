@@ -5,8 +5,8 @@
 # ADMIN="first@email.com,second@email.com"
 # THRESHOLD that will send an email, when disk use in partition is bigger than
 
-ADMIN="manovisut.ktp@gmail.com"
-THRESHOLD=20
+ADMIN="admin@email.com"
+THRESHOLD=80
 
 df -PkH | grep -vE '^Filesystem|tmpfs|cdrom|media' | awk '{ print $5 " " $6 }' | while read output;
 do
@@ -24,15 +24,15 @@ do
                         <p>Running out of space $partition ($usep%) </p><p>on $(hostname) as on $(date)</p><br/>
                 </div>
                 <div id=\"contacts\" style=\"padding: 10px; font-size: 12px; letter-spacing: 0.02em;\">
-                        <p>SPIN SOFT CO,. LTD.<br/>
-                                Incubator, NSTDA.<br/>
-                                support@spinsoft.co.th<br/>
+                        <p>NAME.<br/>
+                                ADDRESS NAME.<br/>
+                                support@email.co.th<br/>
                                 Phone: (+66) -<br/><br/>
                                 Pathum Thani,<br/>
                                 Thailand 12120
                         </p>
                 </div>
         </div>
-</body></html>" | mail -s "$(echo -e "Almost out of disk space\nContent-Type: text/html")" -r "Service<services@spinsoft.co.th>"  $ADMIN
+</body></html>" | mail -s "$(echo -e "Almost out of disk space\nContent-Type: text/html")" -r "Service<services@email.co.th>"  $ADMIN
   fi
 done
