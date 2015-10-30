@@ -14,7 +14,7 @@ Install mail command on CentOS/Redhat:
 
 Getting shell from repository
 ```
-# wget https://bitbucket.org/sptpclinux/disk-free-warning/raw/27db65fcbf133cdccd19408b5f54d37f6323dff6/dfwarning.sh
+# wget https://raw.githubusercontent.com/aspirei7/disk-free-warning/master/dfwarning.sh
 # chmod +x dfwarning.sh
 # mv dfwarning.sh /usr/local/bin/
 
@@ -22,9 +22,11 @@ Getting shell from repository
 
 Install new crontab like this.
 ```
-# 00 00 * * * sh /usr/local/crontabs/dfwarning.sh>>/usr/local/crontabs/dfwarning.log
+# 00 00 * * * sh /usr/local/bin/dfwarning.sh>>/usr/local/bin/dfwarning.log
 
 ```
 
+It's work at daily midnight for checking your disk used.
+
 # Report Issues/Bugs #
-## [Issue](https://bitbucket.org/sptspeech-ios/partykit_lib/issues) ##
+## [Report](https://github.com/aspirei7/disk-free-warning/issues) ##
